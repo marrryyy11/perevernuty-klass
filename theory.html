@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Теория — Перевёрнутый класс</title>
+<style>
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f3f8;
+    color: #34394f;
+}
+header {
+    background: white;
+    padding: 15px 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #5368bd;
+    font-size: 21px;
+    font-weight: bold;
+}
+.logo svg { width: 45px; height: 45px; }
+nav { display: flex; flex-wrap: wrap; gap: 12px; }
+nav a {
+    color: #41465c;
+    text-decoration: none;
+    font-size: 14px;
+}
+.search {
+    padding: 10px 14px;
+    border: 1px solid #dfe2ed;
+    border-radius: 20px;
+    max-width: 180px;
+}
+main {
+    max-width: 1050px;
+    margin: 40px auto;
+    padding: 0 22px;
+}
+h1, h2 { color: #5266bd; }
+.intro { color: #747991; line-height: 1.7; }
+.card {
+    background: white;
+    border-radius: 12px;
+    margin: 22px 0;
+    overflow: hidden;
+    box-shadow: 0 3px 12px #0000000b;
+}
+.card-line {
+    height: 7px;
+    background: linear-gradient(90deg, #6478df, #53cbd5);
+}
+.card-content { padding: 22px; }
+.card p { line-height: 1.7; color: #686f84; }
+footer {
+    background: white;
+    text-align: center;
+    padding: 25px;
+    color: #85899a;
+}
+</style>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="g" x1="0" y1="1" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#6559c7"/>
+                    <stop offset="100%" stop-color="#35bfd0"/>
+                </linearGradient>
+            </defs>
+            <path d="M10 7 V41 H43 V8 H29" fill="none" stroke="url(#g)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="26" cy="25" r="11" fill="none" stroke="url(#g)" stroke-width="4"/>
+            <path d="M23 19 L32 25 L23 31 Z" fill="#655fc4"/>
+        </svg>
+        <span>Перевёрнутый класс</span>
+    </div>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="theory.html">Теория</a>
+        <a href="practice.html">Практика</a>
+        <a href="calendar.html">Календарь</a>
+        <a href="community.html">Сообщество</a>
+        <a href="feedback.html">Обратная связь</a>
+    </nav>
+    <input class="search" type="search" placeholder="Поиск...">
+</header>
+
+<main>
+    <h1>Теория</h1>
+    <p class="intro">Здесь собраны материалы, которые помогут подготовиться к занятиям и разобраться в методе перевёрнутого класса.</p>
+
+    <section class="card">
+        <div class="card-line"></div>
+        <div class="card-content">
+            <h2>Что такое перевёрнутый класс?</h2>
+            <p>Перевёрнутый класс — это модель обучения, при которой ученики знакомятся с теоретическим материалом самостоятельно до занятия, а время урока используют для практики, обсуждения и решения задач.</p>
+        </div>
+    </section>
+
+    <section class="card">
+        <div class="card-line"></div>
+        <div class="card-content">
+            <h2>Как проходит обучение?</h2>
+            <p><strong>До занятия:</strong> изучи материалы, посмотри видео или прочитай текст.</p>
+            <p><strong>Во время занятия:</strong> выполняй задания, обсуждай вопросы и работай в группе.</p>
+            <p><strong>После занятия:</strong> повтори изученное и оцени свои результаты.</p>
+        </div>
+    </section>
+
+    <section class="card">
+        <div class="card-line"></div>
+        <div class="card-content">
+            <h2>Преимущества метода</h2>
+            <p>Самостоятельный темп изучения, больше времени для практики, активное участие в занятиях и совместная работа.</p>
+        </div>
+    </section>
+</main>
+
+<footer>© 2026 «Перевёрнутый класс»</footer>
+</body>
+</html>
+SVG namespace
+www.w3.org
+
+
+
