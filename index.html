@@ -6,228 +6,240 @@
 <title>Перевёрнутый класс</title>
 <style>
 * {
-    box-sizing: border-box;
+   box-sizing: border-box;
 }
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f2f3f8;
-    color: #34394f;
+   margin: 0;
+   font-family: Arial, sans-serif;
+   background: #f2f3f8;
+   color: #34394f;
 }
 header {
-    background: white;
-    min-height: 85px;
-    padding: 15px 4%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 18px;
-    box-shadow: 0 2px 8px #0000000d;
+   background: white;
+   min-height: 85px;
+   padding: 15px 4%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   gap: 18px;
+   box-shadow: 0 2px 8px #0000000d;
 }
 .logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: #5368bd;
-    font-size: 21px;
-    font-weight: bold;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   color: #5368bd;
+   font-size: 21px;
+   font-weight: bold;
 }
 .logo svg {
-    width: 45px;
-    height: 45px;
-    flex-shrink: 0;
+   width: 45px;
+   height: 45px;
+   flex-shrink: 0;
 }
 nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 15px;
 }
 nav a {
-    text-decoration: none;
-    color: #41465c;
-    font-size: 14px;
+   text-decoration: none;
+   color: #41465c;
+   font-size: 14px;
 }
 nav a:hover {
-    color: #6476d8;
+   color: #6476d8;
 }
 .search {
-    padding: 10px 14px;
-    border: 1px solid #dfe2ed;
-    border-radius: 20px;
-    outline: none;
-    max-width: 180px;
+   padding: 10px 14px;
+   border: 1px solid #dfe2ed;
+   border-radius: 20px;
+   outline: none;
+   max-width: 180px;
 }
 .hero {
-    padding: 45px 6%;
+   padding: 45px 6%;
 }
 .hero h1 {
-    color: #5266bd;
-    font-size: 32px;
+   color: #5266bd;
+   font-size: 32px;
 }
 .hero p {
-    color: #747991;
-    line-height: 1.6;
+   color: #747991;
+   line-height: 1.6;
 }
 .content {
-    padding: 0 6% 50px;
+   padding: 0 6% 50px;
 }
 .cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 22px;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+   gap: 22px;
 }
 .card {
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 3px 12px #0000000b;
+   background: white;
+   border-radius: 12px;
+   overflow: hidden;
+   box-shadow: 0 3px 12px #0000000b;
 }
 .card-line {
-    height: 7px;
-    background: linear-gradient(90deg, #6478df, #53cbd5);
+   height: 7px;
+   background: linear-gradient(90deg, #6478df, #53cbd5);
 }
 .card-content {
-    padding: 22px;
+   padding: 22px;
 }
 .card h2 {
-    font-size: 19px;
-    color: #4d5fb4;
+   font-size: 19px;
+   color: #4d5fb4;
 }
 .card p {
-    color: #777d91;
-    line-height: 1.5;
-    font-size: 14px;
+   color: #777d91;
+   line-height: 1.5;
+   font-size: 14px;
 }
 .progress {
-    height: 7px;
-    background: #ececf5;
-    border-radius: 10px;
-    margin: 18px 0 12px;
+   height: 7px;
+   background: #ececf5;
+   border-radius: 10px;
+   margin: 18px 0 12px;
 }
 .progress span {
-    display: block;
-    height: 100%;
-    width: 65%;
-    background: #8873d6;
-    border-radius: 10px;
+   display: block;
+   height: 100%;
+   width: 65%;
+   background: #8873d6;
+   border-radius: 10px;
 }
 .card a {
-    display: inline-block;
-    color: #6375ce;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 8px;
+   display: inline-block;
+   color: #6375ce;
+   text-decoration: none;
+   font-weight: bold;
+   margin-top: 8px;
 }
 footer {
-    text-align: center;
-    background: white;
-    padding: 25px;
-    color: #85899a;
+   text-align: center;
+   background: white;
+   padding: 25px;
+   color: #85899a;
 }
 max-width: 650px {
-    header {
-        justify-content: center;
-    }
-    .hero h1 {
-        font-size: 26px;
-    }
+   header {
+       justify-content: center;
+   }
+   .hero h1 {
+       font-size: 26px;
+   }
 }
 </style>
 </head>
 <body>
-
+ 
 <header>
-    <div class="logo">
-        <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-                <linearGradient id="logoGradient" x1="0" y1="1" x2="1" y2="0">
-                    <stop offset="0%" stop-color="#6559c7"/>
-                    <stop offset="100%" stop-color="#35bfd0"/>
-                </linearGradient>
-            </defs>
-            <path d="M10 7 V41 H43 V8 H29"
-                  fill="none" stroke="url(#logoGradient)"
-                  stroke-width="5" stroke-linecap="round"
-                  stroke-linejoin="round"/>
-            <circle cx="26" cy="25" r="11"
-                    fill="none" stroke="url(#logoGradient)" stroke-width="4"/>
-            <path d="M23 19 L32 25 L23 31 Z" fill="#655fc4"/>
-        </svg>
-        <span>Перевёрнутый класс</span>
-    </div>
-
-    <nav>
-        <a href="index.html">Главная</a>
-        <a href="theory.html">Теория</a>
-        <a href="practice.html">Практика</a>
-        <a href="calendar.html">Календарь</a>
-        <a href="community.html">Сообщество</a>
-        <a href="feedback.html">Обратная связь</a>
-    </nav>
-
-    <input class="search" type="search" placeholder="Поиск...">
+   <div class="logo">
+       <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+           <defs>
+               <linearGradient id="logoGradient" x1="0" y1="1" x2="1" y2="0">
+                   <stop offset="0%" stop-color="#6559c7"/>
+                   <stop offset="100%" stop-color="#35bfd0"/>
+               </linearGradient>
+           </defs>
+           <path d="M10 7 V41 H43 V8 H29"
+                 fill="none" stroke="url(#logoGradient)"
+                 stroke-width="5" stroke-linecap="round"
+                 stroke-linejoin="round"/>
+           <circle cx="26" cy="25" r="11"
+                   fill="none" stroke="url(#logoGradient)" stroke-width="4"/>
+           <path d="M23 19 L32 25 L23 31 Z" fill="#655fc4"/>
+       </svg>
+       <span>Перевёрнутый класс</span>
+   </div>
+ 
+   <nav>
+       <a href="index.html">Главная</a>
+       <a href="theory.html">Теория</a>
+       <a href="practice.html">Практика</a>
+       <a href="calendar.html">Календарь</a>
+       <a href="community.html">Сообщество</a>
+       <a href="feedback.html">Обратная связь</a>
+   </nav>
+ 
+   <input class="search" type="search" placeholder="Поиск...">
 </header>
-
+ 
 <section class="hero">
-    <h1>Добро пожаловать!</h1>
-    <p>Образовательная платформа «Перевёрнутый класс»</p>
-    <p>Изучай теорию самостоятельно, выполняй задания и развивай свои знания!</p>
-</section>
-
-<main class="content">
-    <h2>Разделы обучения</h2>
-
-    <div class="cards">
-        <article class="card">
-            <div class="card-line"></div>
-            <div class="card-content">
-                <h2>Теория</h2>
-                <p>Изучай учебные материалы и знакомься с новыми темами.</p>
-                <div class="progress"><span></span></div>
+   <h1>Добро пожаловать!</h1>
+   <p>Образовательная платформа «Перевёрнутый класс»</p>
+   <p>Изучай теорию
 SVG namespace
 www.w3.org
 
 
-<a href="theory.html">Перейти →</a>
-            </div>
-        </article>
-
-        <article class="card">
-            <div class="card-line"></div>
-            <div class="card-content">
-                <h2>Практика</h2>
-                <p>Закрепляй знания с помощью заданий и упражнений.</p>
-                <div class="progress"><span></span></div>
-                <a href="practice.html">Перейти →</a>
-            </div>
-        </article>
-
-        <article class="card">
-            <div class="card-line"></div>
-            <div class="card-content">
-                <h2>Календарь</h2>
-                <p>Следи за занятиями, событиями и важными датами.</p>
-                <div class="progress"><span></span></div>
-                <a href="calendar.html">Перейти →</a>
-            </div>
-        </article>
-
-        <article class="card">
-            <div class="card-line"></div>
-            <div class="card-content">
-                <h2>Сообщество</h2>
-                <p>Общайся, делись идеями и учись вместе с другими.</p>
-                <div class="progress"><span></span></div>
-                <a href="community.html">Перейти →</a>
-            </div>
-        </article>
-    </div>
+самостоятельно, выполняй задания и развивай свои знания!</p>
+</section>
+ 
+<main class="content">
+   <h2>Разделы обучения</h2>
+ 
+   <div class="cards">
+       <article class="card">
+           <div class="card-line"></div>
+           <div class="card-content">
+               <h2>Теория</h2>
+               <p>Изучай учебные материалы и знакомься с новыми темами.</p>
+               <div class="progress"><span></span></div>
+               <a href="theory.html">Перейти →</a>
+           </div>
+       </article>
+ 
+       <article class="card">
+           <div class="card-line"></div>
+           <div class="card-content">
+               <h2>Практика</h2>
+               <p>Закрепляй знания с помощью заданий и упражнений.</p>
+               <div class="progress"><span></span></div>
+               <a href="practice.html">Перейти →</a>
+           </div>
+       </article>
+ 
+       <article class="card">
+           <div class="card-line"></div>
+           <div class="card-content">
+               <h2>Календарь</h2>
+               <p>Следи за занятиями, событиями и важными датами.</p>
+               <div class="progress"><span></span></div>
+               <a href="calendar.html">Перейти →</a>
+           </div>
+       </article>
+ 
+       <article class="card">
+           <div class="card-line"></div>
+           <div class="card-content">
+               <h2>Сообщество</h2>
+               <p>Общайся, делись идеями и учись вместе с другими.</p>
+               <div class="progress"><span></span></div>
+               <a href="community.html">Перейти →</a>
+           </div>
+       </article>
+ 
+       <article class="card">
+           <div class="card-line"></div>
+           <div class="card-content">
+               <h2>Обратная связь</h2>
+               <p>Оставляй отзывы, задавай вопросы и делись своими предложениями.</p>
+               <div class="progress"><span></span></div>
+               <a href="feedback.html">Перейти →</a>
+           </div>
+       </article>
+   </div>
 </main>
-
+ 
 <footer>
-    © 2026 «Перевёрнутый класс»
+   © 2026 «Перевёрнутый класс»
 </footer>
-
+ 
 </body>
 </html>
+ 
