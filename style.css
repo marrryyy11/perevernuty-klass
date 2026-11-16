@@ -199,4 +199,9 @@ max-width: 650px {
        max-width: 100%;
    }
 }
+.site-logo {
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+}
  
