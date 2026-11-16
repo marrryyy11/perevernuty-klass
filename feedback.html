@@ -1,53 +1,74 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Обратная связь — Перевёрнутый класс</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Обратная связь — Перевёрнутый класс</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+ 
 <header>
-    <div class="header-content">
-        <div class="logo">
-            <img src="logo.jpg" alt="Логотип Перевёрнутого класса" class="site-logo">
-            <span>Перевёрнутый класс</span>
-        </div>
-
-        <nav>
-            <a href="index.html">Главная</a>
-            <a href="theory.html">Теория</a>
-            <a href="practice.html">Практика</a>
-            <a href="calendar.html">Календарь</a>
-            <a href="community.html">Сообщество</a>
-            <a href="feedback.html">Обратная связь</a>
-        </nav>
-    </div>
+   <div class="logo">
+       <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+           <defs>
+               <linearGradient id="logoGradient" x1="0" y1="1" x2="1" y2="0">
+                   <stop offset="0%" stop-color="#6559c7"/>
+                   <stop offset="100%" stop-color="#35bfd0"/>
+               </linearGradient>
+           </defs>
+           <path d="M10 7 V41 H43 V8 H29" fill="none" stroke="url(#logoGradient)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+           <circle cx="26" cy="25" r="11" fill="none" stroke="url(#logoGradient)" stroke-width="4"/>
+           <path d="M23 19 L32 25 L23 31 Z" fill="#655fc4"/>
+       </svg>
+       <span>Перевёрнутый класс</span>
+   </div>
+   <nav>
+       <a href="index.html">Главная</a>
+       <a href="theory.html">Теория</a>
+       <a href="practice.html">Практика</a>
+       <a href="calendar.html">Календарь</a>
+       <a href="community.html">Сообщество</a>
+       <a class="active" href="feedback.html">Обратная связь</a>
+   </nav>
+   <input class="search" type="search" placeholder="Поиск...">
 </header>
+ 
+<section class="hero">
+   <h1>Обратная связь</h1>
+   <p>Нам важно твоё мнение!</p>
+   <p>Оставь отзыв, предложение или задай интересующий вопрос.</p>
+</section>
+ 
+<main
+SVG namespace
+www.w3.org
 
-<main class="container">
-    <h1>Обратная связь</h1>
-    <p>Мы будем рады узнать ваше мнение о проекте «Перевёрнутый класс».</p>
 
-    <section class="card">
-        <h2>Оставьте отзыв</h2>
-
-        <form>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите имя">
-
-            <label for="email">Электронная почта:</label>
-            <input type="email" id="email" placeholder="Введите почту">
-
-            <label for="message">Ваше сообщение:</label>
-            <textarea id="message" rows="5" placeholder="Напишите отзыв или предложение"></textarea>
-
-            <button type="button">Отправить</button>
-        </form>
-    </section>
+class="content">
+   <div class="cards">
+       <article class="card">
+           <div class="card-line"></div>
+           <div class="card-content">
+               <h2>Напиши нам</h2>
+               <p>Поделись впечатлениями о проекте «Перевёрнутый класс».</p>
+               <form>
+                   <label for="name">Твоё имя:</label>
+                   <input type="text" id="name" placeholder="Введите имя">
+ 
+                   <label for="email">Электронная почта:</label>
+                   <input type="email" id="email" placeholder="Введите почту">
+ 
+                   <label for="message">Сообщение:</label>
+                   <textarea id="message" rows="5" placeholder="Напиши своё сообщение"></textarea>
+ 
+                   <button type="button">Отправить</button>
+               </form>
+           </div>
+       </article>
+   </div>
 </main>
-
+ 
+<footer>© 2026 «Перевёрнутый класс»</footer>
 </body>
 </html>
-
