@@ -1,50 +1,72 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сообщество — Перевёрнутый класс</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Сообщество — Перевёрнутый класс</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+ 
 <header>
-    <div class="header-content">
-        <div class="logo">
-            <img src="logo.jpg" alt="Логотип Перевёрнутого класса" class="site-logo">
-            <span>Перевёрнутый класс</span>
-        </div>
-
-        <nav>
-            <a href="index.html">Главная</a>
-            <a href="theory.html">Теория</a>
-            <a href="practice.html">Практика</a>
-            <a href="calendar.html">Календарь</a>
-            <a href="community.html">Сообщество</a>
-            <a href="feedback.html">Обратная связь</a>
-        </nav>
-    </div>
+   <div class="logo">
+       <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+           <defs>
+               <linearGradient id="logoGradient" x1="0" y1="1" x2="1" y2="0">
+                   <stop offset="0%" stop-color="#6559c7"/>
+                   <stop offset="100%" stop-color="#35bfd0"/>
+               </linearGradient>
+           </defs>
+           <path d="M10 7 V41 H43 V8 H29" fill="none" stroke="url(#logoGradient)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+           <circle cx="26" cy="25" r="11" fill="none" stroke="url(#logoGradient)" stroke-width="4"/>
+           <path d="M23 19 L32 25 L23 31 Z" fill="#655fc4"/>
+       </svg>
+       <span>Перевёрнутый класс</span>
+   </div>
+   <nav>
+       <a href="index.html">Главная</a>
+       <a href="theory.html">Теория</a>
+       <a href="practice.html">Практика</a>
+       <a href="calendar.html">Календарь</a>
+       <a class="active" href="community.html">Сообщество</a>
+       <a href="feedback.html">Обратная связь</a>
+   </nav>
+   <input class="search" type="search" placeholder="Поиск...">
 </header>
-
-<main class="container">
-    <h1>Сообщество</h1>
-    <p>Добро пожаловать в сообщество проекта «Перевёрнутый класс»!</p>
-
-    <section class="card">
-        <h2>Общение и обмен опытом</h2>
-        <p>Здесь можно узнать о возможностях перевёрнутого обучения, поделиться идеями и познакомиться с полезными материалами.</p>
-    </section>
-
-    <section class="card">
-        <h2>Полезные советы</h2>
-        <p>Обменивайтесь опытом, обсуждайте учебные задания и находите новые способы сделать обучение интереснее.</p>
-    </section>
-
-    <section class="card">
-        <h2>Будьте активны!</h2>
-        <p>Используйте полученные знания на практике и делитесь своими результатами.</p>
-    </section>
+ 
+<section class="hero">
+   <h1>Сообщество</h1>
+   <p>Учись, общайся и делись своими идеями!</p>
+   <p>Здесь собраны полезные советы и возможности для обмена опытом.</p>
+</section>
+ 
+<main class="content">
+   <h2>Наше сообщество</h2>
+   <div class="cards">
+       <article class="card">
+           <div class="card-line"></div>
+           <div class="card-content">
+               <h2>Обмен опытом</h2>
+               <p>Делись своими идеями и находи новые способы обучения.</p>
+           </div>
+       </article>
+       <article class="card">
+           <div class="card-line"></div>
+           <div class="card-content">
+               <h2>Полезные советы</h2>
+               <p>Знакомься с рекомендациями по организации самостоятельной работы.</p>
+           </div>
+       </article>
+       <article class="card">
+           <div class="card-line"></div>
+           <div class="card-content">
+               <h2>Совместное обучение</h2>
+               <p>Развивай навыки сотрудничества и учись вместе с другими.</p>
+           </div>
+       </article>
+   </div>
 </main>
-
+ 
+<footer>© 2026 «Перевёрнутый класс»</footer>
 </body>
 </html>
